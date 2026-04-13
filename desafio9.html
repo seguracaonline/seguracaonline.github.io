@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Desafio 9 - Senhas</title>
+<link rel="stylesheet" href="style.css">
+<style>
+#certa:checked ~ .correct { display:block; }
+#certa:checked ~ .next { display:block; }
+#errada1:checked ~ .wrong,
+#errada2:checked ~ .wrong { display:block; }
+</style>
+</head>
+<body>
+
+<img src="logo.png" class="logo">
+
+<div class="container">
+<h1>Desafio 9: Senhas</h1>
+<div class="resumo">
+<p>Senhas curtas ou simples são fáceis de adivinhar. Misture letras maiúsculas, minúsculas, números e símbolos para criar uma senha segura.</p>
+</div>
+
+<p class="pergunta"><strong>Qual destas senhas é a mais segura?</strong></p>
+
+
+
+<input type="radio" name="q9" id="errada1">
+<label class="option" for="errada1">abc123</label>
+
+<input type="radio" name="q9" id="certa">
+<label class="option" for="certa">S3gura!2026#</label>
+
+<input type="radio" name="q9" id="errada2">
+<label class="option" for="errada2">senha2023</label>
+
+
+<div class="feedback wrong">❌ Errado!</div>
+<div class="feedback correct">✅ Correto!</div>
+
+<div class="next">
+<a href="desafio10.html">Próximo</a>
+</div>
+</div>
+
+</body>
+</html>

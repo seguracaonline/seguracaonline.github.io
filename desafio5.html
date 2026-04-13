@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Desafio 5 - Atualizações</title>
+<link rel="stylesheet" href="style.css">
+<style>
+#certa:checked ~ .correct { display:block; }
+#certa:checked ~ .next { display:block; }
+#errada1:checked ~ .wrong,
+#errada2:checked ~ .wrong { display:block; }
+</style>
+</head>
+<body>
+
+<img src="logo.png" class="logo">
+
+<div class="container">
+<h1>Desafio 5: Atualizações</h1>
+<div class="resumo">
+<p>Atualizações de sistemas e apps corrigem falhas de segurança e melhoram a proteção dos dados. Ignorar atualizações deixa o dispositivo vulnerável.</p>
+</div>
+
+<p class="pergunta"><strong>Porque são importantes as atualizações?</strong></p>
+
+<input type="radio" name="q5" id="errada1">
+<label class="option" for="errada1">Não são importantes</label>
+
+<input type="radio" name="q5" id="certa">
+<label class="option" for="certa">Corrigem falhas de segurança</label>
+
+<input type="radio" name="q5" id="errada2">
+<label class="option" for="errada2">Só mudam o design</label>
+
+
+<div class="feedback wrong">❌ Errado!</div>
+<div class="feedback correct">✅ Certo!</div>
+
+<div class="next">
+<a href="desafio6.html">Próximo</a>
+</div>
+</div>
+
+</body>
+</html>

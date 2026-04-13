@@ -1,0 +1,178 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: 'Orbitron', sans-serif; /* futurista */
+  background-color: #000; /* fundo preto */
+  color: #fff; /* texto branco */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Container central */
+.container {
+  background: rgba(20, 20, 20, 0.95); /* fundo preto translúcido */
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 650px;
+  width: 100%;
+  box-shadow: 0 0 30px #fff, 0 0 60px #aaa;
+  position: relative;
+  border: 2px solid #fff;
+  transition: transform 0.3s;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+/* Título */
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 10px #fff, 0 0 20px #aaa;
+}
+
+/* Resumo / Explicação */
+.resumo {
+  background: rgba(50, 50, 50, 0.7);
+  padding: 15px;
+  border-left: 5px solid #fff;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  font-size: 1em;
+  line-height: 1.5;
+  text-shadow: 0 0 3px #fff;
+}
+
+/* Pergunta */
+.pergunta {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 5px #fff;
+}
+
+/* Opções */
+.option {
+  display: block;
+  margin: 10px 0;
+  padding: 15px;
+  background: rgba(60, 60, 60, 0.8);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #fff;
+  text-shadow: 0 0 3px #fff;
+}
+
+.option:hover {
+  background: #fff;
+  color: #000;
+  transform: scale(1.05);
+  text-shadow: 0 0 10px #fff, 0 0 20px #aaa;
+}
+
+/* Inputs escondidos */
+input {
+  display: none;
+}
+
+/* Feedback */
+.feedback {
+  display: none;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.correct {
+  color: #00ffcc;
+  text-shadow: 0 0 10px #00ffcc;
+}
+
+.wrong {
+  color: #ff4444;
+  text-shadow: 0 0 10px #ff4444;
+}
+
+/* Próximo desafio */
+.next {
+  display: none;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.next a {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.1em;
+  font-weight: bold;
+  background: #fff;
+  color: #000;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 0 10px #fff, 0 0 20px #aaa;
+  transition: all 0.3s;
+}
+
+.next a:hover {
+  background: #aaa;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #fff, 0 0 40px #aaa;
+}
+
+/* Logo da escola */
+.logo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 80px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #fff;
+  transition: transform 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+/* Botão estilo caixa futurista */
+.start-button {
+  display: block;
+  padding: 20px 40px;
+  margin: 30px auto 0 auto; /* centralizado */
+  font-size: 1.3em;
+  font-weight: bold;
+  background: rgba(60, 60, 60, 0.8);
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 0 10px #fff, 0 0 20px #aaa;
+  transition: all 0.3s;
+}
+
+.start-button:hover {
+  background: #fff;
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #fff, 0 0 40px #aaa;
+}

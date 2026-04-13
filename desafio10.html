@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Desafio 10 - Computador Público</title>
+<link rel="stylesheet" href="style.css">
+<style>
+#certa:checked ~ .correct { display:block; }
+#certa:checked ~ .next { display:block; }
+#errada1:checked ~ .wrong,
+#errada2:checked ~ .wrong { display:block; }
+</style>
+</head>
+<body>
+
+<img src="logo.png" class="logo">
+
+<div class="container">
+<h1>Desafio 10: Computador Público</h1>
+<div class="resumo">
+<p>Usar computadores públicos sem cuidado pode expor contas e senhas. É essencial fazer logout e não guardar dados pessoais nesses dispositivos.</p>
+</div>
+
+<p class="pergunta"><strong>O que deves fazer ao usar um computador público?</strong></p>
+
+<input type="radio" name="q10" id="errada1">
+<label class="option" for="errada1">Guardar as senhas nele</label>
+
+<input type="radio" name="q10" id="errada2">
+<label class="option" for="errada2">Deixar sessão aberta</label>
+
+<input type="radio" name="q10" id="certa">
+<label class="option" for="certa">Fazer logout e não guardar dados</label>
+
+<div class="feedback wrong">❌ Errado!</div>
+<div class="feedback correct">✅ Correto!</div>
+
+<div class="next">
+<a href="final.html">Final</a>
+</div>
+</div>
+
+</body>
+</html>

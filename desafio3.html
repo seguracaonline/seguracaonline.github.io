@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Desafio 3 - Apps Seguras</title>
+<link rel="stylesheet" href="style.css">
+<style>
+#certa:checked ~ .correct { display:block; }
+#certa:checked ~ .next { display:block; }
+#errada1:checked ~ .wrong,
+#errada2:checked ~ .wrong { display:block; }
+</style>
+</head>
+<body>
+
+<img src="logo.png" class="logo">
+
+<div class="container">
+<h1>Desafio 3: Apps Seguras</h1>
+<div class="resumo">
+<p>Aplicações móveis podem solicitar permissões excessivas ou conter malware. É essencial verificar permissões e avaliações antes de instalar.</p>
+</div>
+
+<p class="pergunta"><strong>O que deves fazer antes de instalar uma app?</strong></p>
+
+<input type="radio" name="q3" id="certa">
+<label class="option" for="certa">Ver permissões e avaliações</label>
+
+<input type="radio" name="q3" id="errada1">
+<label class="option" for="errada1">Instalar sem ler nada</label>
+
+<input type="radio" name="q3" id="errada2">
+<label class="option" for="errada2">Aceitar todas as permissões</label>
+
+
+<div class="feedback wrong">❌ Opção insegura!</div>
+<div class="feedback correct">✅ Boa escolha!</div>
+
+<div class="next">
+<a href="desafio4.html">Próximo</a>
+</div>
+</div>
+
+</body>
+</html>

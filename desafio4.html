@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Desafio 4 - Localização</title>
+<link rel="stylesheet" href="style.css">
+<style>
+#certa:checked ~ .correct { display:block; }
+#certa:checked ~ .next { display:block; }
+#errada1:checked ~ .wrong,
+#errada2:checked ~ .wrong { display:block; }
+</style>
+</head>
+<body>
+
+<img src="logo.png" class="logo">
+
+<div class="container">
+<h1>Desafio 4: Localização</h1>
+<div class="resumo">
+<p>Partilhar a localização pode expor informações pessoais e hábitos. Deve ser usada apenas quando necessário.</p>
+</div>
+
+<p class="pergunta"><strong>Quando deves partilhar a tua localização?</strong></p>
+
+<input type="radio" name="q4" id="certa">
+<label class="option" for="certa">Só quando necessário</label>
+
+<input type="radio" name="q4" id="errada1">
+<label class="option" for="errada1">Sempre ligada</label>
+
+<input type="radio" name="q4" id="errada2">
+<label class="option" for="errada2">Em redes públicas</label>
+
+
+
+<div class="feedback wrong">❌ Exposição desnecessária!</div>
+<div class="feedback correct">✅ Correto!</div>
+
+<div class="next">
+<a href="desafio5.html">Próximo</a>
+</div>
+</div>
+
+</body>
+</html>

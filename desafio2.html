@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Desafio 2 - Wi-Fi Seguro</title>
+<link rel="stylesheet" href="style.css">
+<style>
+#certa:checked ~ .correct { display:block; }
+#certa:checked ~ .next { display:block; }
+#errada1:checked ~ .wrong,
+#errada2:checked ~ .wrong { display:block; }
+</style>
+</head>
+<body>
+
+<img src="logo.png" class="logo">
+
+<div class="container">
+<h1>Desafio 2: Wi-Fi Seguro</h1>
+<div class="resumo">
+<p>O Wi-Fi público pode ser muito perigoso. Redes abertas ou sem password são vulneráveis a ataques, roubo de dados e acesso não autorizado.</p>
+</div>
+
+<p class="pergunta"><strong>Qual é a rede mais segura?</strong></p>
+
+<input type="radio" name="q2" id="errada1">
+<label class="option" for="errada1">Wi-Fi público sem password</label>
+
+<input type="radio" name="q2" id="certa">
+<label class="option" for="certa">Wi-Fi com password forte e encriptação</label>
+
+<input type="radio" name="q2" id="errada2">
+<label class="option" for="errada2">Wi-Fi aberto do café</label>
+
+
+<div class="feedback wrong">❌ Rede insegura!</div>
+<div class="feedback correct">✅ Rede segura!</div>
+
+<div class="next">
+<a href="desafio3.html">Próximo</a>
+</div>
+</div>
+
+</body>
+</html>

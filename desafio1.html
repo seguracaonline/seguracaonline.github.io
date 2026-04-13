@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Desafio 1 - Senha Segura</title>
+<link rel="stylesheet" href="style.css">
+<style>
+#certa:checked ~ .correct { display:block; }
+#certa:checked ~ .next { display:block; }
+#errada1:checked ~ .wrong,
+#errada2:checked ~ .wrong { display:block; }
+</style>
+</head>
+<body>
+
+<img src="logo.png" class="logo">
+
+<div class="container">
+  <h1>Desafio 1: Senha Segura</h1>
+
+  <div class="resumo">
+    <p>Senhas fracas permitem que hackers acedam às contas facilmente. Sempre use senhas longas, complexas e únicas para cada serviço.</p>
+  </div>
+
+  <p class="pergunta"><strong>Escolhe a senha mais segura:</strong></p>
+
+  <input type="radio" name="q1" id="errada1">
+  <label class="option" for="errada1">12345678</label>
+
+  <input type="radio" name="q1" id="errada2">
+  <label class="option" for="errada2">password</label>
+
+  <input type="radio" name="q1" id="certa">
+  <label class="option" for="certa">P@ssw0rd2026!</label>
+
+  <div class="feedback wrong">❌ Senha fraca!</div>
+  <div class="feedback correct">✅ Correto! Podes avançar.</div>
+
+  <div class="next">
+    <a href="desafio2.html">Próximo</a>
+  </div>
+</div>
+
+</body>
+</html>

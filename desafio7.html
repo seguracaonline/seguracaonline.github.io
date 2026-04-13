@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Desafio 7 - Backup</title>
+<link rel="stylesheet" href="style.css">
+<style>
+#certa:checked ~ .correct { display:block; }
+#certa:checked ~ .next { display:block; }
+#errada1:checked ~ .wrong,
+#errada2:checked ~ .wrong { display:block; }
+</style>
+</head>
+<body>
+
+<img src="logo.png" class="logo">
+
+<div class="container">
+<h1>Desafio 7: Backup</h1>
+<div class="resumo">
+<p>Fazer backups regulares protege os dados em caso de falhas do sistema, roubo ou ataque de malware.</p>
+</div>
+
+<p class="pergunta"><strong>Qual a melhor forma de proteger dados importantes?</strong></p>
+
+<input type="radio" name="q7" id="errada1">
+<label class="option" for="errada1">Guardando só no computador</label>
+
+<input type="radio" name="q7" id="errada2">
+<label class="option" for="errada2">Guardando só no telemóvel</label>
+
+<input type="radio" name="q7" id="certa">
+<label class="option" for="certa">Fazer backups regulares na cloud ou disco externo</label>
+
+<div class="feedback wrong">❌ Errado!</div>
+<div class="feedback correct">✅ Correto!</div>
+
+<div class="next">
+<a href="desafio8.html">Próximo</a>
+</div>
+</div>
+
+</body>
+</html>
